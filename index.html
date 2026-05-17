@@ -3,20 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Md. Rayan Rahman — Creative Developer & UI Designer Portfolio. Building cutting-edge, professional, and interactive digital experiences.">
+  
+  <!-- Primary SEO Meta Tags -->
+  <meta name="description" content="Md. Rayan Rahman — Creative Developer & UI Designer. Specialized in crafting high-fidelity, high-performance, and visually stunning digital experiences.">
+  <meta name="keywords" content="Md. Rayan Rahman, Rayan Rahman, Creative Developer, UI Designer, Frontend Engineer, Portfolio, Next.js, Vercel, Glassmorphism">
   <meta name="author" content="Md. Rayan Rahman">
   
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rayanrahman.dev/">
+  <meta property="og:title" content="Md. Rayan Rahman — Creative Developer & UI Designer">
+  <meta property="og:description" content="Specialized in crafting high-fidelity, high-performance, and visually stunning digital experiences.">
+  <meta property="og:image" content="assets/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Md. Rayan Rahman — Creative Developer & UI Designer">
+  <meta property="twitter:description" content="Specialized in crafting high-fidelity, high-performance, and visually stunning digital experiences.">
+  <meta property="twitter:image" content="assets/og-image.jpg">
+
   <title>Md. Rayan Rahman — Creative Developer & UI Designer</title>
   
-  <!-- Google Fonts: Inter & Outfit -->
+  <!-- Google Fonts: Inter (body) & Outfit (headings) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
-  <!-- FontAwesome CDN for Premium Vector Icons -->
+  <!-- FontAwesome CDN for Premium Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
-  <!-- Core Design System & Styling -->
+  <!-- Core Design System Styling -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -46,7 +62,7 @@
       <div class="nav-actions">
         <!-- Dark/Light Theme Button -->
         <button id="theme-toggle" class="nav-action-btn" aria-label="Toggle light and dark color mode">
-          <i class="fas fa-sun"></i>
+          <i class="fas fa-sun" aria-hidden="true"></i>
         </button>
 
         <!-- Mobile Menu Toggle Button (Hamburger) -->
@@ -60,7 +76,7 @@
   </header>
 
   <!-- Mobile Overlay Menu Drawer -->
-  <div class="mobile-menu-drawer">
+  <div class="mobile-menu-drawer" id="mobile-drawer">
     <div class="drawer-container">
       <ul class="drawer-list">
         <li><a href="#hero" class="drawer-link nav-link">Home</a></li>
@@ -78,7 +94,9 @@
        ========================================================================== -->
   <main>
     
-    <!-- Section: Hero -->
+    <!-- ==========================================================================
+         2. HERO SECTION
+         ========================================================================== -->
     <section id="hero" class="section hero-section">
       <!-- Background Particle Sketch Canvas -->
       <canvas id="particle-canvas" class="hero-canvas" aria-hidden="true"></canvas>
@@ -93,24 +111,32 @@
             <span class="typing-cursor" aria-hidden="true">|</span>
           </div>
           <p class="hero-desc">
-            Building premium, high-fidelity, and pixel-perfect digital experiences.
-            Let's translate complex problems into elegant, dynamic user interfaces.
+            Building digital experiences that matter. I translate complex logic and structural requirements into elegant, high-fidelity visual products.
           </p>
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary">
               <span>View Projects</span>
-              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
             </a>
-            <a href="assets/cv-rayan.pdf" class="btn btn-secondary" download>
+            <a href="assets/cv-rayan.pdf" class="btn btn-secondary" download="Md_Rayan_Rahman_CV.pdf">
               <span>Download CV</span>
-              <i class="fas fa-download"></i>
+              <i class="fas fa-download" aria-hidden="true"></i>
             </a>
           </div>
         </div>
       </div>
+
+      <!-- Bouncing Scroll Down Arrow -->
+      <div class="scroll-down" aria-hidden="true">
+        <a href="#about" class="scroll-down-arrow" aria-label="Scroll down to About section">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
     </section>
 
-    <!-- Section: About -->
+    <!-- ==========================================================================
+         3. ABOUT SECTION
+         ========================================================================== -->
     <section id="about" class="section">
       <div class="container">
         <div class="section-header">
@@ -118,22 +144,71 @@
           <h2 class="section-title">A Brief Story</h2>
           <p class="section-desc">Who I am and what drives my creativity.</p>
         </div>
+        
         <div class="grid-2">
+          <!-- Avatar Panel -->
           <div class="about-visual">
-            <!-- Dynamic styling will fit here -->
-            <div class="glass-card about-card-placeholder">
-              <i class="fas fa-code-branch fa-3x gradient-text"></i>
-              <p>Visual/Avatar Space Placeholder</p>
+            <div class="about-avatar-card glass-card">
+              <div class="avatar-glow"></div>
+              <div class="avatar-icon-wrapper">
+                <i class="fas fa-laptop-code fa-4x gradient-text" aria-hidden="true"></i>
+              </div>
+              <h3 class="avatar-name">Md. Rayan Rahman</h3>
+              <p class="avatar-tagline">Creative Developer & UI Designer</p>
             </div>
           </div>
-          <div class="about-text">
-            <p>Ready to build state-of-the-art websites.</p>
+          
+          <!-- Summary and Stat Cards -->
+          <div class="about-details">
+            <div class="about-summary">
+              <p class="about-para">
+                I am a highly motivated **Creative Developer & UI Designer** who thrives at the intersection of aesthetic design and complex technical engineering. I specialize in assembling pixel-perfect, clean responsive frontends while tying them to secure backend APIs.
+              </p>
+              <p class="about-para">
+                My workflow is rooted in modern visual structures, glassmorphic layout tokens, clean markup guidelines, and blazing-fast client performance. I believe websites should be visually captivating while delivering exceptional efficiency.
+              </p>
+            </div>
+            
+            <!-- Three Highlight Cards -->
+            <div class="about-stats-grid">
+              <!-- Stat Card 1 -->
+              <div class="stat-card glass-card">
+                <div class="stat-header">
+                  <i class="fas fa-hourglass-half stat-icon" aria-hidden="true"></i>
+                  <span class="stat-number">3+</span>
+                </div>
+                <h4 class="stat-title">Years Experience</h4>
+                <p class="stat-desc">Fostering high-performance code structures.</p>
+              </div>
+
+              <!-- Stat Card 2 -->
+              <div class="stat-card glass-card">
+                <div class="stat-header">
+                  <i class="fas fa-shapes stat-icon" aria-hidden="true"></i>
+                  <span class="stat-number">20+</span>
+                </div>
+                <h4 class="stat-title">Projects Crafted</h4>
+                <p class="stat-desc">Tailored business dashboards to client sites.</p>
+              </div>
+
+              <!-- Stat Card 3 -->
+              <div class="stat-card glass-card">
+                <div class="stat-header">
+                  <i class="fas fa-smile-beam stat-icon" aria-hidden="true"></i>
+                  <span class="stat-number">5+</span>
+                </div>
+                <h4 class="stat-title">Happy Clients</h4>
+                <p class="stat-desc">Exceeding visual expectations every time.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section: Experience -->
+    <!-- ==========================================================================
+         4. WORK EXPERIENCE SECTION
+         ========================================================================== -->
     <section id="experience" class="section">
       <div class="container">
         <div class="section-header">
@@ -141,13 +216,70 @@
           <h2 class="section-title">Work Experience</h2>
           <p class="section-desc">A brief history of my professional journey.</p>
         </div>
-        <div class="timeline-scaffold">
-          <p>Timeline details will populate here during Phase 2.</p>
+
+        <div class="timeline-container">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Timeline Entry 1 -->
+          <div class="timeline-item left">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <span class="timeline-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> Jan 2024 - Present</span>
+                <span class="timeline-badge">Full Time</span>
+              </div>
+              <h3 class="timeline-role">Senior UI/UX Engineer</h3>
+              <h4 class="timeline-company">AuraTech Solutions</h4>
+              <ul class="timeline-bullets">
+                <li>Architected high-performance web interfaces using Next.js, reducing Core Web Vitals First Contentful Paint by 40%.</li>
+                <li>Established global design tokens, UI kits, and component libraries across three separate development squads.</li>
+                <li>Mentored and led 5 junior frontend engineering personnel through responsive framework overhauls.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 2 -->
+          <div class="timeline-item right">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <span class="timeline-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> Jul 2022 - Dec 2023</span>
+                <span class="timeline-badge">Full Time</span>
+              </div>
+              <h3 class="timeline-role">Frontend Developer</h3>
+              <h4 class="timeline-company">Nexus Digital Lab</h4>
+              <ul class="timeline-bullets">
+                <li>Converted complex high-fidelity Figma layout prototypes into clean, modular, semantic HTML/CSS structures.</li>
+                <li>Engineered interactive animations and micro-states using vanilla JavaScript to enhance user click engagement by 25%.</li>
+                <li>Integrated external secure REST APIs with full JSON parsing and dynamic interface populating workflows.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 3 -->
+          <div class="timeline-item left">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <span class="timeline-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> Jan 2022 - Jun 2022</span>
+                <span class="timeline-badge">Internship</span>
+              </div>
+              <h3 class="timeline-role">Full-Stack Developer Intern</h3>
+              <h4 class="timeline-company">InnoFlow Agency</h4>
+              <ul class="timeline-bullets">
+                <li>Developed robust database schema migration scripts and APIs using Node.js, Express, and PostgreSQL.</li>
+                <li>Implemented server-side unit tests reducing client dashboard code regression errors by 15%.</li>
+                <li>Coordinated closely with designers and product leads to ship weekly production sprint bundles.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Section: Skills -->
+    <!-- ==========================================================================
+         5. SKILLS SECTION
+         ========================================================================== -->
     <section id="skills" class="section">
       <div class="container">
         <div class="section-header">
@@ -155,13 +287,96 @@
           <h2 class="section-title">Technical Skills</h2>
           <p class="section-desc">My toolkit for shaping and building digital products.</p>
         </div>
-        <div class="skills-scaffold">
-          <p>Interactive skill grids and bars will load here.</p>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1: Animated Progress Bars -->
+          <div class="skills-bars-container glass-card">
+            <h3 class="skills-sub-title"><i class="fas fa-code gradient-text" aria-hidden="true"></i> Core Development</h3>
+            <p class="skills-sub-desc">Primary languages and frameworks I use on a daily basis.</p>
+            
+            <div class="skills-list">
+              <!-- Skill Bar 1 -->
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 / CSS3</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-bar-bg" aria-label="95% proficiency in HTML5 and CSS3">
+                  <div class="progress-bar-fill" data-width="95%" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Bar 2 -->
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-bar-bg" aria-label="90% proficiency in JavaScript">
+                  <div class="progress-bar-fill" data-width="90%" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Bar 3 -->
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span class="skill-name">React / Next.js</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-bar-bg" aria-label="88% proficiency in React and Next.js">
+                  <div class="progress-bar-fill" data-width="88%" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Bar 4 -->
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span class="skill-name">Node.js / Express</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-bar-bg" aria-label="80% proficiency in Node.js">
+                  <div class="progress-bar-fill" data-width="80%" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <!-- Skill Bar 5 -->
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="progress-bar-bg" aria-label="75% proficiency in Python">
+                  <div class="progress-bar-fill" data-width="75%" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 2: Skill Tag Cloud -->
+          <div class="skills-tags-container glass-card">
+            <h3 class="skills-sub-title"><i class="fas fa-toolbox gradient-text" aria-hidden="true"></i> Tools & Ecosystem</h3>
+            <p class="skills-sub-desc">Technologies and visual design tools integrated in my deployment workflows.</p>
+            
+            <div class="skill-tags-cloud">
+              <span class="skill-tag"><i class="fab fa-figma" aria-hidden="true"></i> Figma</span>
+              <span class="skill-tag"><i class="fab fa-git-alt" aria-hidden="true"></i> Git / GitHub</span>
+              <span class="skill-tag"><i class="fas fa-plug" aria-hidden="true"></i> REST APIs</span>
+              <span class="skill-tag"><i class="fas fa-shield-alt" aria-hidden="true"></i> TypeScript</span>
+              <span class="skill-tag"><i class="fab fa-sass" aria-hidden="true"></i> Tailwind CSS</span>
+              <span class="skill-tag"><i class="fas fa-database" aria-hidden="true"></i> PostgreSQL</span>
+              <span class="skill-tag"><i class="fas fa-bolt" aria-hidden="true"></i> Drizzle ORM</span>
+              <span class="skill-tag"><i class="fab fa-php" aria-hidden="true"></i> PHP</span>
+              <span class="skill-tag"><i class="fas fa-server" aria-hidden="true"></i> Vercel / Hosting</span>
+              <span class="skill-tag"><i class="fas fa-search-dollar" aria-hidden="true"></i> SEO Auditing</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Section: Projects -->
+    <!-- ==========================================================================
+         6. PROJECTS SECTION (FILTERABLE GRID)
+         ========================================================================== -->
     <section id="projects" class="section">
       <div class="container">
         <div class="section-header">
@@ -169,13 +384,130 @@
           <h2 class="section-title">Featured Projects</h2>
           <p class="section-desc">A selection of platforms, tools, and visual creations.</p>
         </div>
-        <div class="projects-scaffold">
-          <p>Portfolio grid will populate here.</p>
+
+        <!-- Filter Control Buttons -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <!-- Projects Cards Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Budget Pro -->
+          <article class="project-card glass-card" data-category="frontend design">
+            <div class="project-image-wrapper">
+              <img src="assets/project-budgetpro.jpg" alt="Budget Pro — Futuristic Financial Dashboard mockup" class="project-img" loading="lazy" width="400" height="250">
+              <span class="project-badge">Featured</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Budget Pro</h3>
+              <p class="project-desc">
+                A premium "sci-fi" styled financial management application with dynamic widgets, expense graphs, and theme switching.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">Tailwind</span>
+                <span class="project-tag">Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://budgetpro-demo.vercel.app" class="project-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo
+                </a>
+                <a href="https://github.com/rayan-rah57/budget-pro" class="project-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: UIU Hostel System -->
+          <article class="project-card glass-card" data-category="backend">
+            <div class="project-image-wrapper">
+              <img src="assets/project-hostel.jpg" alt="UIU Hostel Management Portal dashboard design" class="project-img" loading="lazy" width="400" height="250">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">UIU Hostel Management System</h3>
+              <p class="project-desc">
+                An administrative and student portal managing reservations, repairs, dynamic room grids, and supervisor allocations.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML/CSS/JS</span>
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link-btn disabled" aria-disabled="true" tabindex="-1">
+                  <i class="fas fa-lock" aria-hidden="true"></i> Internal
+                </a>
+                <a href="https://github.com/rayan-rah57/uiu-hostel-system" class="project-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: TodoFlow -->
+          <article class="project-card glass-card" data-category="frontend backend">
+            <div class="project-image-wrapper">
+              <img src="assets/project-todoflow.jpg" alt="TodoFlow kanban layout user interface" class="project-img" loading="lazy" width="400" height="250">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">TodoFlow</h3>
+              <p class="project-desc">
+                A super-responsive Kanban planner engine supporting sub-tasks, priority tags, and drag-and-drop workflow updates.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">Postgres</span>
+                <span class="project-tag">Drizzle</span>
+              </div>
+              <div class="project-links">
+                <a href="https://todoflow-client.vercel.app" class="project-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Demo
+                </a>
+                <a href="https://github.com/rayan-rah57/todoflow" class="project-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Creative Developer Portfolio -->
+          <article class="project-card glass-card" data-category="frontend design">
+            <div class="project-image-wrapper">
+              <img src="assets/project-portfolio.jpg" alt="Creative Portfolio website mockup displaying dark and light models" class="project-img" loading="lazy" width="400" height="250">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Custom Portfolio</h3>
+              <p class="project-desc">
+                This fully customized, glassmorphism-focused portfolio website loaded with performance animations and particle backdrop sketches.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">Vanilla JS</span>
+              </div>
+              <div class="project-links">
+                <a href="#hero" class="project-link-btn">
+                  <i class="fas fa-circle-notch" aria-hidden="true"></i> Active
+                </a>
+                <a href="https://github.com/rayan-rah57/portfolio" class="project-link-btn" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github" aria-hidden="true"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- Section: Education -->
+    <!-- ==========================================================================
+         7. EDUCATION SECTION
+         ========================================================================== -->
     <section id="education" class="section">
       <div class="container">
         <div class="section-header">
@@ -183,13 +515,44 @@
           <h2 class="section-title">Academic Background</h2>
           <p class="section-desc">My credentials and learning paths.</p>
         </div>
-        <div class="education-scaffold">
-          <p>Education cards will map here.</p>
+
+        <div class="education-grid">
+          <!-- Education Card 1 -->
+          <div class="education-card glass-card">
+            <div class="education-icon-wrapper">
+              <i class="fas fa-graduation-cap gradient-text" aria-hidden="true"></i>
+            </div>
+            <div class="education-details">
+              <span class="education-year">2020 - 2024</span>
+              <h3 class="education-degree">Bachelor of Science in Computer Science & Engineering</h3>
+              <h4 class="education-school">United International University (UIU)</h4>
+              <p class="education-desc">
+                Specialized in Software Engineering and Human-Computer Interaction. Completed active project tasks in database architecture and frontend application designs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education Card 2 -->
+          <div class="education-card glass-card">
+            <div class="education-icon-wrapper">
+              <i class="fas fa-school gradient-text" aria-hidden="true"></i>
+            </div>
+            <div class="education-details">
+              <span class="education-year">2018 - 2020</span>
+              <h3 class="education-degree">Higher Secondary School Certificate (HSC)</h3>
+              <h4 class="education-school">Dhaka City College</h4>
+              <p class="education-desc">
+                Science Group. Gained core fundamental strengths in analytical physics, core mathematics, and introductory computing logic.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Section: Contact -->
+    <!-- ==========================================================================
+         8. CONTACT SECTION
+         ========================================================================== -->
     <section id="contact" class="section">
       <div class="container">
         <div class="section-header">
@@ -197,8 +560,103 @@
           <h2 class="section-title">Let's Connect</h2>
           <p class="section-desc">I'm always open to discussing new projects or creative opportunities.</p>
         </div>
-        <div class="contact-scaffold">
-          <p>Interactive forms and social cards will integrate here.</p>
+
+        <div class="grid-2">
+          <!-- Info Panel -->
+          <div class="contact-info-panel glass-card">
+            <h3 class="contact-panel-title">Contact Information</h3>
+            <p class="contact-panel-desc">
+              Have an interesting opportunity or simply want to chat about a potential collaboration? Feel free to drop a message or reach out via email!
+            </p>
+            
+            <div class="contact-details-list">
+              <!-- Detail Entry 1 -->
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fas fa-envelope gradient-text" aria-hidden="true"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <span class="contact-detail-label">Email Me</span>
+                  <a href="mailto:rayan.rah57@gmail.com" class="contact-detail-link">rayan.rah57@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Detail Entry 2 -->
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                  <i class="fas fa-map-marker-alt gradient-text" aria-hidden="true"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <span class="contact-detail-label">Location</span>
+                  <span class="contact-detail-val">Dhaka, Bangladesh</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Icon Links -->
+            <div class="contact-socials-wrapper">
+              <h4 class="contact-socials-title">Follow My Spaces</h4>
+              <div class="contact-social-icons">
+                <a href="https://github.com/rayan-rah57" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow Md. Rayan Rahman on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/in/rayan-rahman" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Connect with Md. Rayan Rahman on LinkedIn">
+                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/rayan_rah57" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow Md. Rayan Rahman on Twitter">
+                  <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-panel glass-card">
+            <form action="mailto:rayan.rah57@gmail.com" method="post" enctype="text/plain" class="portfolio-contact-form">
+              <h3 class="form-panel-title">Send a Message</h3>
+              
+              <!-- Input: Name -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name</label>
+                <div class="input-wrapper">
+                  <i class="far fa-user input-icon" aria-hidden="true"></i>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                </div>
+              </div>
+
+              <!-- Input: Email -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <div class="input-wrapper">
+                  <i class="far fa-envelope input-icon" aria-hidden="true"></i>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+                </div>
+              </div>
+
+              <!-- Input: Subject -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <i class="far fa-sticky-note input-icon" aria-hidden="true"></i>
+                  <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Collaboration Request" required>
+                </div>
+              </div>
+
+              <!-- Input: Message -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Your Message</label>
+                <div class="textarea-wrapper">
+                  <textarea id="contact-message" name="message" class="form-textarea" placeholder="How can I assist you?" rows="5" required></textarea>
+                </div>
+              </div>
+
+              <!-- Submit CTA -->
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <i class="far fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -206,7 +664,7 @@
   </main>
 
   <!-- ==========================================================================
-       FOOTER SECTION
+       9. FOOTER SECTION
        ========================================================================== -->
   <footer class="portfolio-footer">
     <div class="container footer-container">
@@ -217,7 +675,7 @@
 
   <!-- Scroll-to-Top Button -->
   <button id="scroll-top-btn" class="scroll-top-button" aria-label="Scroll back to top of the page">
-    <i class="fas fa-chevron-up"></i>
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
   </button>
 
   <!-- Core JavaScript Interactivity -->
