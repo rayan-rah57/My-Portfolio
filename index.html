@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Md. Rayan Rahman — Creative Developer & UI Designer Portfolio. Building cutting-edge, professional, and interactive digital experiences.">
+  <meta name="author" content="Md. Rayan Rahman">
+  
+  <title>Md. Rayan Rahman — Creative Developer & UI Designer</title>
+  
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome CDN for Premium Vector Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Core Design System & Styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. NAVIGATION HEADER
+       ========================================================================== -->
+  <header id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Go to home section">
+        <span class="logo-accent">R</span><span class="logo-main">R</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Toggles -->
+      <div class="nav-actions">
+        <!-- Dark/Light Theme Button -->
+        <button id="theme-toggle" class="nav-action-btn" aria-label="Toggle light and dark color mode">
+          <i class="fas fa-sun"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle Button (Hamburger) -->
+        <button id="menu-toggle" class="nav-action-btn mobile-menu-toggle" aria-expanded="false" aria-controls="navbar" aria-label="Open primary menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu Drawer -->
+  <div class="mobile-menu-drawer">
+    <div class="drawer-container">
+      <ul class="drawer-list">
+        <li><a href="#hero" class="drawer-link nav-link">Home</a></li>
+        <li><a href="#about" class="drawer-link nav-link">About</a></li>
+        <li><a href="#experience" class="drawer-link nav-link">Experience</a></li>
+        <li><a href="#skills" class="drawer-link nav-link">Skills</a></li>
+        <li><a href="#projects" class="drawer-link nav-link">Projects</a></li>
+        <li><a href="#contact" class="drawer-link nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main>
+    
+    <!-- Section: Hero -->
+    <section id="hero" class="section hero-section">
+      <!-- Background Particle Sketch Canvas -->
+      <canvas id="particle-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="section-label">Welcome to my space</span>
+          <h1 class="hero-title">Md. Rayan Rahman</h1>
+          <div class="hero-subtitle">
+            <span class="typing-text-prefix">I am a </span>
+            <span id="typing-text" class="gradient-text">Creative Developer</span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </div>
+          <p class="hero-desc">
+            Building premium, high-fidelity, and pixel-perfect digital experiences.
+            Let's translate complex problems into elegant, dynamic user interfaces.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="assets/cv-rayan.pdf" class="btn btn-secondary" download>
+              <span>Download CV</span>
+              <i class="fas fa-download"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">A Brief Story</h2>
+          <p class="section-desc">Who I am and what drives my creativity.</p>
+        </div>
+        <div class="grid-2">
+          <div class="about-visual">
+            <!-- Dynamic styling will fit here -->
+            <div class="glass-card about-card-placeholder">
+              <i class="fas fa-code-branch fa-3x gradient-text"></i>
+              <p>Visual/Avatar Space Placeholder</p>
+            </div>
+          </div>
+          <div class="about-text">
+            <p>Ready to build state-of-the-art websites.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">My Path</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-desc">A brief history of my professional journey.</p>
+        </div>
+        <div class="timeline-scaffold">
+          <p>Timeline details will populate here during Phase 2.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Expertise</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-desc">My toolkit for shaping and building digital products.</p>
+        </div>
+        <div class="skills-scaffold">
+          <p>Interactive skill grids and bars will load here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">My Works</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">A selection of platforms, tools, and visual creations.</p>
+        </div>
+        <div class="projects-scaffold">
+          <p>Portfolio grid will populate here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Education</span>
+          <h2 class="section-title">Academic Background</h2>
+          <p class="section-desc">My credentials and learning paths.</p>
+        </div>
+        <div class="education-scaffold">
+          <p>Education cards will map here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-desc">I'm always open to discussing new projects or creative opportunities.</p>
+        </div>
+        <div class="contact-scaffold">
+          <p>Interactive forms and social cards will integrate here.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== -->
+  <footer class="portfolio-footer">
+    <div class="container footer-container">
+      <p class="copyright">&copy; 2026 Md. Rayan Rahman. All rights reserved.</p>
+      <p class="last-updated">Last updated: May 2026</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scroll-top-btn" class="scroll-top-button" aria-label="Scroll back to top of the page">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Core JavaScript Interactivity -->
+  <script src="script.js"></script>
+</body>
+</html>

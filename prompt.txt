@@ -1,0 +1,68 @@
+Create a modern, professional portfolio website that serves as an interactive CV/resume. Use HTML, CSS, and vanilla JavaScript (no frameworks). Make it fully responsive, visually stunning, and production-ready.
+
+REQUIREMENTS:
+
+1. STRUCTURE:
+- Clean, minimalist design with ample white space
+- Hero section with name, title, and short bio
+- About section with professional summary
+- Work experience section (timeline style preferred)
+- Skills section with visual representation (progress bars or skill tags)
+- Projects/portfolio section with 3-4 sample projects
+- Education section
+- Contact section with social links and email
+- Footer with copyright and "last updated" date
+
+2. DESIGN SYSTEM:
+- Modern color palette (dark/light mode toggle would be great)
+- Smooth scrolling navigation
+- Subtle hover animations and transitions
+- Glassmorphism or soft shadows for cards
+- Use system fonts (Inter, Poppins, or SF Pro)
+- Gradient accents for headings or buttons
+
+3. INTERACTIVE FEATURES:
+- Sticky navigation bar that changes style on scroll
+- Active section highlighting in nav
+- Typing animation for hero tagline
+- Smooth "scroll to top" button that appears after scrolling
+- Filterable project cards (by category if possible)
+- Download PDF version of CV button
+
+4. RESPONSIVE:
+- Mobile-first approach
+- Hamburger menu for mobile devices
+- Flexbox/Grid layout that adapts from 320px to 4K screens
+- Touch-friendly buttons and links
+
+5. PERFORMANCE:
+- Lazy load images
+- Optimized for Core Web Vitals
+- Use CSS Grid and Flexbox appropriately
+
+6. EXTRAS (nice to have):
+- Dark/light theme toggle with local storage persistence
+- Animated skill bars when they come into view
+- Custom cursor effect (optional)
+- Particle.js or simple canvas background in hero section
+
+7. TECHNICAL SPECS:
+- Single HTML file (index.html)
+- Separate CSS file (styles.css)
+- Separate JavaScript file (script.js)
+- Use FontAwesome or similar for icons (CDN is fine)
+- Google Fonts for typography
+- Comment your code well
+
+CONTENT PLACEHOLDERS (replace with my info later):
+Name: [Md. Rayan Rahman]
+Title: Creative Developer & UI Designer
+Bio: Building digital experiences that matter
+Email: rayan.rah57@gmail.com
+Social: GitHub, LinkedIn, Twitter
+Experience: Include 2-3 job entries with dates, titles, descriptions
+Skills: HTML, CSS, JavaScript, React, Node.js, Python, Figma
+Projects: Create 3 modern project cards with images, titles, tech stack
+
+OUTPUT:
+Generate complete, working code for all three files (HTML, CSS, JS) that I can immediately deploy to Vercel. Make it look cutting-edge but professional - suitable for a senior developer or designer role.
